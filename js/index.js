@@ -30,15 +30,15 @@ const loadAllCategoryNews = async () => {
   articles.forEach((article) => {
     const newDiv = document.createElement("div");
     newDiv.innerHTML = ` 
-      <div class="border  border-gray-300 rounded-lg">
+      <div class="border  border-gray-300 p-5 rounded-lg ">
             <div>
-             <img src="${article.image.srcset[5].url}"/>
+             <img class="w-full rounded-lg" src="${article.image.srcset[5].url}"/>
             </div>
-            <div id="${article.id}" class="p-2">
-                <h1 class="font-extrabold">${article.title}</h1>
+            <div id="${article.id}">
+                <h1 class="font-extrabold"  >${article.title}</h1>
             <p class="text-sm">${article.time}</p>
                  <button class="btn">Bookmark</button>
-                   <button class="btn">View Details</button>
+                <button class="btn">View Details</button>
             </div>
         </div>`;
     categoryContainer.appendChild(newDiv);
