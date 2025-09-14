@@ -25,7 +25,7 @@
   <body>
     <header>
       <div class="bg-red-600 py-5">
-        <div class="max-w-7xl mx-auto px-5">
+        <div class="container mx-auto px-5">
           <img class="invert" src="./images/logo.svg" />
         </div>
       </div>
@@ -33,15 +33,19 @@
       <nav class="border-b border-gray-200">
         <div
           id="categoryContainer"
-          class="flex gap-10 text-lg max-w-7xl mx-auto px-5"
+          class="flex gap-10 text-lg container mx-auto px-5"
         ></div>
       </nav>
     </header>
 
-    <main class="max-w-7xl mx-auto px-5 mt-5 grid grid-cols-4 gap-5">
+    <main class="container mx-auto px-5 mt-5 grid grid-cols-4 gap-5">
       <!-- <div class="grid grid-cols-3 gap-5 col-span-3" id="newsContainer">
         <div class="bg-red-500 p-3">Loading...</div>
       </div> -->
+      <div
+        id="newsContainer"
+        class="col-span-3 grid md:grid-cols-4 gap-5"
+      ></div>
 
       <div class="col-span-1 border border-gray-300 rounded-lg overflow-hidden">
         <div class="bg-red-500 text-white p-3">
