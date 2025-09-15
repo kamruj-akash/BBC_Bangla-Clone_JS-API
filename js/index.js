@@ -15,11 +15,13 @@ const loadNavMenu = async () => {
   });
 };
 
+// showViaCategory
 const showViaCategory = (id) => {
   const url = `https://news-api-fs.vercel.app/api/categories/${id}`;
   console.log(url);
 };
 
+// loadAllCategoryNews
 const loadAllCategoryNews = async () => {
   const categoryContainer = getID("newsContainer");
   const url = "https://news-api-fs.vercel.app/api/categories/main";
